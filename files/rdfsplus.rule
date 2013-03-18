@@ -1,0 +1,16 @@
+[domain:   (?x ?p ?y), (?p rdfs:domain ?c) -> (?x rdf:type ?c)] 
+[range:   (?x ?p ?y), (?p rdfs:range ?c) -> (?y rdf:type ?c)] 
+
+[subProperty:   (?a ?p ?b), (?p rdfs:subPropertyOf ?q) -> (?a ?q ?b)] 
+[subProperty2:   (?x rdfs:subPropertyOf ?y), (?y rdfs:subPropertyOf ?z) -> (?x rdfs:subPropertyOf ?z)] 
+
+[subClass:   (?x rdfs:subClassOf ?y), (?a rdf:type ?x) -> (?a rdf:type ?y)] 
+[subClass2:  (?x rdfs:subClassOf ?y), (?y rdfs:subClassOf ?z) -> (?x rdfs:subClassOf ?z)] 
+
+[owlinv:  (?x ?p ?y), (?p owl:inverseOf ?q) -> (?y ?q ?x)] 
+[owlinvof: (?p owl:inverseOf ?q) -> (?q owl:inverseOf ?p)] 
+
+[owlTransitive:  (?x ?p ?y), (?y ?p ?z), (?p rdf:type owl:TransitiveProperty) -> (?x ?p ?z)] 
+
+[owlSame:  (?x ?p ?y), (?x owl:sameAs ?z) -> (?z ?p ?y)] 
+[owlSame2: (?x owl:sameAs ?y) -> (?y owl:sameAs ?x)] 

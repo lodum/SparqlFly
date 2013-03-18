@@ -1,0 +1,147 @@
+body {
+  background: white fixed no-repeat left top;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif; 
+  font-size: 13px;
+  margin: 0;
+  padding: 3em;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:link, h1 a:link, h1 a:visited {
+  color: #006E89;
+}
+
+h1 a:link{
+	text-decoration: none;
+}
+
+a:visited {
+  color: #006E89
+}
+
+a:hover, a:active, h1 a:hover {
+  color: #B1C800
+}
+
+a:link img, a:visited img {
+  border: none;
+}
+hr {
+	color: #B1C800;
+	background-color: #B1C800;
+	border: none;
+	height: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background: white;
+  color: #006E89;
+  font-weight: normal;
+  text-align: left;
+}
+
+h1 {
+  font-size: 340%;
+  margin-top: 0px
+}
+
+h2 {
+  font-size: 180%;
+  padding-top: 0.6em;
+}
+
+h3 {
+  font-size: 140%;
+  margin-top: 1.5em;
+}
+
+h4 {
+  font-size: 120%;
+  margin: 2em 0 0.5em;
+}
+
+input{
+	font-size: 15px;
+	padding: 3px;
+	margin-right: 10px;
+	border: 1px solid grey;
+}
+
+.hide {
+  display: none
+}
+
+.error {
+	color: red;
+}
+
+pre {
+  background-color: #ffec8b;
+  color: black;
+  font-family: monospace;
+  line-height: 1.5em;
+  padding: 1.5em 2em;
+}
+
+pre strong {
+  color: #a00;
+  font-weight: bold;
+}
+
+dt {
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+
+dd {
+  margin: 0 0 0 3em;
+}
+
+code, tt {
+  font-family: monospace
+}
+
+ul.toc {
+  list-style-type: none
+}
+
+td{
+  padding-right: 15px
+}
+
+
+@media Aural {
+
+h1, h2, h3 {
+  stress: 20; richness: 90
+}
+
+.hide {
+  speak: none
+}
+
+dt {
+  pause-before: 20%
+}
+
+pre {
+  speak-punctuation: code;
+}
+
+table.sparql-result {
+/* border-collapse: collapse;*/
+border-spacing: 1px;
+border: 1px solid #dddddd;
+margin: 0px 10px 0px 10px;
+}
+
+table.sparql-result th {
+background-color: #e3e3e3;
+border: 1px solid black;
+}
+
+}
