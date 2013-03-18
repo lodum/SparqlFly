@@ -355,9 +355,10 @@ public class SparqlFly extends AbstractHandler {
 	private Model getModelFromURL(String urlString, String format) throws Exception{
 		Model m = ModelFactory.createDefaultModel(ReificationStyle.Standard);
 		
-		if(format.equals(Format.HTML)){
+		if(format.equals("HTML")){
 			 StatementSink sink = new JenaStatementSink(m);
 		        XMLReader parser = ParserFactory.createReaderForFormat(sink, Format.HTML);
+		        parser.parse(urlString);
 		}else{
 		URL url = null;
 		try {
